@@ -1,0 +1,497 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"teh",
+				"themePicker"
+			],
+			[
+				"grade",
+				"gradeToGpa"
+			],
+			[
+				"btn",
+				"btn-flat"
+			],
+			[
+				"bin",
+				"binValue"
+			],
+			[
+				"hover",
+				"hoverBgDisplay"
+			],
+			[
+				"waves",
+				"waves-light"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"incorre",
+				"incorrectAl"
+			],
+			[
+				"page-b",
+				"page-break-after"
+			],
+			[
+				"page",
+				"page-break-after"
+			],
+			[
+				"border-radius",
+				"border-top-right-radius"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"user",
+				"userNumber"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"change",
+				"changeValueCheck"
+			],
+			[
+				"scan",
+				"scan_done"
+			],
+			[
+				"file",
+				"file_id"
+			],
+			[
+				"if",
+				"ife\tif … else"
+			],
+			[
+				"input1",
+				"input1parsed"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"admin",
+				"admin-password"
+			],
+			[
+				"dis",
+				"disabled"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"chan",
+				"changedTo"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"check",
+				"checkall"
+			],
+			[
+				"dista",
+				"distance2"
+			],
+			[
+				"dire",
+				"direction"
+			],
+			[
+				"s",
+				"style\tAttr"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"control-",
+				"control-panel"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"open",
+				"open-modal"
+			],
+			[
+				"dist",
+				"distislandapprove"
+			],
+			[
+				"spe",
+				"speedapprove"
+			],
+			[
+				"control",
+				"control-panel-options"
+			],
+			[
+				"eta",
+				"etaapprove"
+			],
+			[
+				"dir",
+				"directapprove"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: install package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: add cha",
+				"Package Control: Add Channel"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 455.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Jack/Desktop/SCD Robotics/mail/list.txt",
+		"/C/Program Files (x86)/X-Plane 11/Resources/plugins/XTextureExtractor/Typhoon.acf.tex",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/e2000/Assets/raycastController.cs",
+		"/C/Users/Jack/Desktop/SCD Robotics/mail/sendmail.php",
+		"/C/Users/Jack/Desktop/SCD Robotics/mail/index.html",
+		"/C/Program Files (x86)/X-Plane 11/Aircraft/Extra Aircraft/ef2000_v16/Typhoon.acf.tex",
+		"/C/Users/Jack/Desktop/notepad.ahk",
+		"/C/xampp/htdocs/acp/assets/style.css",
+		"/C/xampp/htdocs/acp/index.html",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/e2000/Assets/LookAtMouse.cs",
+		"/C/Users/Jack/Downloads/gmail_massive_email_sender--master/gmail_massive_email_sender--master/emails_file.txt",
+		"/C/Users/Jack/Downloads/gmail_massive_email_sender--master/gmail_massive_email_sender--master/config",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/e2000/Assets/Zoom.cs",
+		"/C/xampp/htdocs/acp/assets/script.js",
+		"/C/Program Files (x86)/X-Plane 11/Aircraft/Extra Aircraft/ef2000_v16/Typhoon_cockpit_INN.obj",
+		"/C/Program Files (x86)/X-Plane 11/Aircraft/Extra Aircraft/ef2000_v16/Typhoon_cockpit_OUT.obj",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/littlePerson/builds/0.2/index.html",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/littlePerson/Assets/controllerv2.cs",
+		"/C/xampp/htdocs/jacksSite/newScript.js",
+		"/C/xampp/htdocs/jacksSite/newStyle.css",
+		"/C/Users/Jack/Documents/GitHub/jackcrane.github.io/index.html",
+		"/C/Users/Jack/Documents/GitHub/jackcrane.github.io/Build/UnityLoader.js",
+		"/C/Users/Jack/Documents/GitHub/jackcrane.github.io/Build/0.4.json",
+		"/C/Users/Jack/Documents/GitHub/jackcrane.github.io/TemplateData/UnityProgress.js",
+		"/C/xampp/htdocs/jacksSite/index.html",
+		"/C/Users/Jack/Documents/GitHub/jackcrane.github.io/Build/0.3.json",
+		"/C/xampp/htdocs/jacksSite/Build/UnityLoader.js",
+		"/C/xampp/htdocs/jacksSite/dev/index.html",
+		"/C/Users/Jack/Documents/GitHub/jackcrane.github.io/fancyIndex.html",
+		"/C/xampp/htdocs/iMissions/student.php",
+		"/C/xampp/htdocs/iMissions/index.php",
+		"/C/xampp/htdocs/iMissions/names.php",
+		"/C/Users/Jack/Documents/pin/script.js",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/Donald J Trump/Assets/cameraMove.cs",
+		"/C/Users/Jack/Documents/pin/manifest.json",
+		"/C/Users/Jack/Desktop/colors.bat",
+		"/C/xampp/htdocs/iMissions/style.css",
+		"/C/xampp/htdocs/iMissions/test.php",
+		"/C/xampp/htdocs/iMissions/studentPortal.php",
+		"/C/xampp/htdocs/iMissions/signup.php",
+		"/C/xampp/htdocs/iMissions/teacher.php",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/Ethan_brand/Assets/TextFadeOut.cs",
+		"/C/Users/Jack/Desktop/adb.bat",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/littlePerson/Assets/controller.cs",
+		"/C/xampp/htdocs/mollyv2/index.html",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/littlePerson/Assets/controller.cpp",
+		"/C/xampp/htdocs/aether/zips/extracted/v1.1.03/assets/elements/homepage_universal.php",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/Ethan_brand/Assets/controller.cs",
+		"/C/Users/Jack/Documents/Unity_Projects/Unity_Projects/Donald J Trump/Assets/LerpExample.cs",
+		"/C/Users/Jack/Documents/google2.0.0.jpg",
+		"/C/xampp/htdocs/iMissions/test1.php",
+		"/C/xampp/htdocs/aether/assets/css/style.css",
+		"/C/xampp/htdocs/aether/zeal.php",
+		"/C/xampp/htdocs/iMissions/script.js",
+		"/C/xampp/htdocs/mollyv2/script.js",
+		"/C/xampp/htdocs/mollyv2/style.css",
+		"/C/xampp/htdocs/mollyv2/form.php",
+		"/C/xampp/htdocs/mollyv2/component.css",
+		"/C/xampp/htdocs/mollyv2/index.php",
+		"/C/xampp/htdocs/mollyv2/head.php",
+		"/C/Users/Jack/Downloads/ModalWindowEffects/ModalWindowEffects/index.html",
+		"/C/xampp/htdocs/aether/supportUs.php",
+		"/C/xampp/htdocs/aether/registerSupport.php",
+		"/C/xampp/htdocs/aether/server.php",
+		"/C/xampp/htdocs/aether/assets/returns/fnErr.php",
+		"/C/xampp/htdocs/aether/assets/returns/emErr.php",
+		"/C/xampp/htdocs/aether/assets/returns/lnErr.php",
+		"/C/xampp/htdocs/aether/assets/returns/pwErr.php",
+		"/C/xampp/htdocs/aether/assets/returns/unErr.php",
+		"/C/xampp/htdocs/aether/errors.php",
+		"/C/xampp/htdocs/aether/assets/css/forms.css",
+		"/C/xampp/htdocs/aether/assets/elements/navbar_out.php",
+		"/C/xampp/htdocs/aether/assets/elements/registerSupport.php",
+		"/H/ssh",
+		"/C/xampp/htdocs/iMissions/teacherPortal.php",
+		"/C/xampp/htdocs/iMissions/results.php",
+		"/C/xampp/htdocs/iMissions/server.php",
+		"/C/xampp/htdocs/iMissions/success.php",
+		"/C/xampp/htdocs/aether/register.php",
+		"/C/xampp/htdocs/aether/assets/elements/functions.php",
+		"/C/xampp/htdocs/aether/mailer/index.php",
+		"/C/xampp/htdocs/aether/loginSupport.php",
+		"/C/xampp/htdocs/aether/assets/servers/server_supportUsReg.php",
+		"/C/xampp/htdocs/aether/testbench/content.php",
+		"/C/xampp/htdocs/iMissions/options.php",
+		"/C/xampp/htdocs/aether/login.php",
+		"/C/xampp/htdocs/aether/assets/elements/support.php",
+		"/C/xampp/htdocs/aether/assets/servers/server_supportUs.php",
+		"/H/cmdline.txt",
+		"/H/config.txt",
+		"/C/xampp/htdocs/iMissions/createTable.php",
+		"/C/xampp/htdocs/aether/index_out.php",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/htdocs/aether/index_in.php",
+		"/C/xampp/htdocs/aether/assets/elements/footer.php",
+		"/C/xampp/htdocs/aether/sendmail_v2.php",
+		"/C/xampp/htdocs/aether/sendmail.php",
+		"/C/xampp/htdocs/aether/assets/elements/usrSettings.php",
+		"/C/xampp/htdocs/aether/assets/elements/head.php",
+		"/C/xampp/htdocs/aether/news.php",
+		"/C/xampp/htdocs/aether/assets/elements/homepage_universal.php",
+		"/C/xampp/htdocs/aether/assets/elements/navbar_in.php",
+		"/C/xampp/htdocs/aether/assets/js/script.js",
+		"/C/xampp/htdocs/forum/index.php",
+		"/C/Users/Jack/Desktop/webDevEnvironment.bat",
+		"/C/Users/Jack/Downloads/Composer-Setup.exe",
+		"/C/Users/Jack/Downloads/composer-setup-test.exe",
+		"/C/xampp/htdocs/molly/v2/init.js",
+		"/C/xampp/htdocs/aether/test.html",
+		"/C/xampp/htdocs/aether/app/index.cs",
+		"/C/xampp/htdocs/aether/app/DesktopAppLink.cs",
+		"/C/xampp/htdocs/aether/forum/_database/database.php",
+		"/C/Users/Jack/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/xampp/htdocs/aether/vendor/autoload.php",
+		"/C/Users/Jack/Documents/GitHub/jackcrane.github.io/sendmail.php",
+		"/C/xampp/htdocs/aether/tests/sendmail.php",
+		"/C/xampp/htdocs/aether/show.php",
+		"/C/xampp/htdocs/aether/forums/index.php",
+		"/C/xampp/htdocs/aether/forums/header.php",
+		"/C/xampp/htdocs/aether/forums/footer.php",
+		"/C/xampp/htdocs/aether/forums/connect.php",
+		"/C/xampp/htdocs/aether/forums/style.css",
+		"/C/xampp/sendmail/sendmail.ini",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/xampp/htdocs/aether/index.php",
+		"/C/xampp/htdocs/acctSys/index_in.php",
+		"/C/xampp/htdocs/acctSys/login.php",
+		"/C/xampp/htdocs/acctSys/index.php"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 201.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"parse-",
+				"C:\\Users\\Jack\\Desktop\\parse-config.py"
+			],
+			[
+				"file",
+				"filenotfound.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
