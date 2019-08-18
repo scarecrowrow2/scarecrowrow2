@@ -32,19 +32,19 @@
 		<h3>Previous Scarecrows</h3>
 		<br><br><br>
 		<div class="swipe">
-			<img class="past" src="assets/images/aviator.jpeg">
-			<img class="past" src="assets/images/frankenstien.jpg" style="height:324px;border:none;">
-			<img class="past" src="assets/images/bountiful.jpeg">
-			<img class="past" src="assets/images/caroline.jpeg">
-			<img class="past" src="assets/images/skeleton.jpeg" style="height:320px">
-			<img class="past" src="assets/images/max.jpeg">
-			<img class="past" src="assets/images/blum.jpg" style="height:320px">
-			<img class="past" src="assets/images/q102.jpg" style="height:320px">
-			<img class="past" src="assets/images/mop.jpeg">
-			<img class="past" src="assets/images/rake.jpeg">
-			<img class="past" src="assets/images/witch.jpg" style="height:324px;border:none;">
-			<img class="past" src="assets/images/serenity.jpeg" style="height:320px">
-			<img class="past" src="assets/images/sunflower.jpeg">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/aviator.jpeg">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/frankenstien.jpg" style="height:324px;border:none;">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/bountiful.jpeg">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/caroline.jpeg">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/skeleton.jpeg" style="height:320px">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/max.jpeg">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/blum.jpg" style="height:320px">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/q102.jpg" style="height:320px">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/mop.jpeg">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/rake.jpeg">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/witch.jpg" style="height:324px;border:none;">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/serenity.jpeg" style="height:320px">
+			<img class="past" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" data-src="assets/images/sunflower.jpeg">
 		</div>
 		<br><br><br>
 		<b>Scarecrow Row is looking for creative individuals to make scarecrows for 2019! Interested? <a href="mailto:scarecrowrow@gmail.com">Email us!</a>
@@ -55,5 +55,15 @@
 		<br><br><br>
 		<b><a href="media.html">Scarecrow Row in the Media</a></b>
 	</div>
+	<script>
+	window.addEventListener('load', function(){
+	    var allimages= document.getElementsByTagName('img');
+	    for (var i=0; i<allimages.length; i++) {
+	        if (allimages[i].getAttribute('data-src')) {
+	            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+	        }
+	    }
+	}, false)
+	</script>
 </body>
 </html>
