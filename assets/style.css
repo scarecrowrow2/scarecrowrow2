@@ -3,23 +3,44 @@
 	src:url("sunshine.ttf");
 }
 
+@font-face {
+	font-family:"Hello Scarecrow";
+	src:url("HelloScarecrow.ttf");
+}
+
+@font-face {
+	font-family:"Sunshine2";
+	src:url("sunshine_2.ttf");
+}
+
+@font-face {
+	font-family:"happy";
+	src:url("happy.ttf");
+}
+
 h1 {
-	font-family: 'A little sunshine', serif;
+	font-family: 'happy', serif;
 	font-size:6rem;
 	margin-bottom: 0;
+	letter-spacing:3px;
 }
 h2 {
-	font-family: 'A little sunshine', serif;
+	font-family: 'Hello Scarecrow', serif;
 	font-size:3rem;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 h3 {
-	font-family: 'A little sunshine', serif;
+	font-family: 'A little Sunshine', serif;
 	font-size:2rem;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+b {
+	font-family:'A little Sunshine',serif;
+	font-size:1.5rem;
 }
 
 .center {
