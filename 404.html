@@ -1,0 +1,173 @@
+<div class="content" onclick="document.getElementById('input').focus()">
+  <div class="browser-bar">
+    <span class="close button"></span>
+    <span class="min button"></span>
+    <span class="max button"></span>
+  </div>
+  <div class="text">
+  	  Error: <span style="color:red">404</span>
+  </div>
+  <div class="text">Oops! Looks like you are lost!<br>Search for what you wanted!</div>
+  >> <input id="input" class="input" type="text" onkeyup="searchToPage(this.value)">
+  <div class="padded">
+	  <div class="text">Search Result:</div>
+	  <a id="return" href=""></a>
+	  <div id="hidden" hidden>
+	  	Oops! I don't know what you are asking - im still learning! However, here are some links:<br>
+	  	<a href="index.html">Home</a>
+	  	<a href="media.html">Media</a>
+	  	<a href="contact.html">Contact</a>
+
+	  </div>
+	</div>
+  <script>document.getElementById('input').focus()</script>
+</div>
+
+<script>
+const pages_map = {
+	home:"index.html",
+	news:"media.html",
+	video:"media.html",
+	videos:"media.html",
+	images:"index.html",
+	image:"index.html",
+	article:"media.html",
+	articles:"media.html",
+	q102:"video.html",
+	q_102:"video.html",
+	straw_men:"article.html",
+	contact:"contact.html",
+	submit:"contact.html",
+	sign_up:"contact.html",
+	email:"mailto:scarecrowrowcincinnati@gmail.com",
+}
+const names_map = {
+	'index.html':"Home",
+	'media.html':"Media",
+	'article.html':"Straw Men",
+	'video.html':"Q102 Article",
+	'contact.html':'Contact Us',
+	'mailto:scarecrowrowcincinnati@gmail.com':"Email us directly"
+	// videos:"index.html",
+	// images:"index.html",
+	// contact:"index.html",
+}
+function searchToPage(a) {
+
+	if(a!="") {
+
+		document.getElementById('return').href = "#"
+		document.getElementById('return').innerHTML = ""
+		var searchLower = a.toLowerCase();
+		searchLower = searchLower.replace(/ /g,"_");
+		searchLower = searchLower.replace(/-/g,"_");
+		var result = pages_map[searchLower];
+		if(result==undefined) {
+			document.getElementById('hidden').hidden = false
+			document.getElementById('return').href = "#"
+		} else {
+			document.getElementById('return').href = result
+			document.getElementById('hidden').hidden = true
+		}
+		var pgname = names_map[result]
+		if(pgname==undefined) {
+			document.getElementById('hidden').hidden = false
+		} else {
+			document.getElementById('return').innerHTML = pgname
+			document.getElementById('hidden').hidden = true
+		}
+	} else {
+		document.getElementById('hidden').hidden = true
+	}
+}
+</script>
+
+<style>
+	body {
+  background: #000;
+  color: #fff;
+  font-family: "Lucida Console", Monaco, monospace;
+  line-height: 1.5;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: solid 2px;
+}
+
+@media (min-width: 640px) {
+  body {
+    background-image: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?dpr=2&fit=crop&fm=jpg&h=960&ixlib=rb-0.3.5&q=50&w=1440);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  .content {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 45px 20px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .5);
+    border-radius: 5px 5px 0 0;
+    cursor: text;
+  }
+
+  .browser-bar {
+    background: #f9f9f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .button {
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .close {
+    background: #fc635d;
+  }
+
+  .min {
+    background: #fdbc40;
+  }
+
+  .max {
+    background: #34c84a;
+  }
+}
+
+.input {
+  background-color:#333;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-family: "Lucida Console", Monaco, monospace;
+  line-height: 1.5;
+  font-size:1rem;
+  width:90%;
+}
+.padded {
+	padding-left: 5%;
+    border-left: 2px solid white;
+    color: grey;
+}
+</style>
