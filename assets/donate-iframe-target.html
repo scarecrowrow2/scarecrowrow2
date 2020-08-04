@@ -1,0 +1,85 @@
+<div id="pageContent">
+          <div style="height:10px;width:100%"></div>
+          <div id="newUdfRegion" class="pageRegion"><div id="eniBdGupc" class="block  pageBlock row"><div id="e1k4uTCZP" class="nonFunctionalContent standard pageBlockElement row"><div class="col-xs-12"><p style="text-align: center;"><a href="http://madishousecincy.org" target="_blank"><img title="Madi's House Logo" src="donateimages/madishouselogotransparent.png" alt="Madi's House Logo" width="222" height="200"></a></p></div><div class="clearingDiv" style="clear:both;"></div></div>
+</div>
+</div><div id="gift_information_region" class="pageRegion"><div class="ecRegionHeader row"><h1 class="regionTitle">Gift Information</h1></div><div id="gift_information_widget_block" class="block gift_information_widget_block pageBlock row"><div id="ecAdvancedDonationWidget" class=""><div id="gift_amount_simple" class="systemStandardElement standard pageBlockElement row"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">Donation Amount*</h6></div><div class="col-sm-5 col-xs-12"><h6 class="currencySymbol text-right">$</h6><input id="gift_amount_simpleField" type="text" name="otherAmt" etrequired="true" onchange="getTotal();"></div><div class="clearingDiv" style="clear:both;"></div></div>
+<div id="rgsFrequency" class="systemStandardElement standard pageBlockElement row"><div class="col-sm-5 col-xs-12"><h6 id="label" class="dropdownType">Donation Frequency*</h6></div><div class="col-sm-5 col-xs-12"><select id="rgsFrequencyField" name="rgsFrequency" etrequired="true"><option id="gift_amount_advanced_-" value="-">One Time</option><option id="gift_amount_advanced_1" value="1">Annually</option><option id="gift_amount_advanced_2" value="2">Semi-Annually</option><option id="gift_amount_advanced_4" value="4">Quarterly</option><option id="gift_amount_advanced_12" value="12">Monthly</option><option id="gift_amount_advanced_52" value="52">Weekly</option></select></div><div class="clearingDiv" style="clear:both;"></div></div>
+<div style="clear:both;"></div></div></div>
+</div><div id="contact_information_region" class="pageRegion"><div class="ecRegionHeader row"><h1 class="regionTitle">Contact Information</h1></div><div id="names_block" class="block names_block pageBlock row"><div id="ecNamesBlockWidget" class=""><!-- ngInclude: undefined --><ng-include src="'diy/templates/contact/contact.html'" class="ng-scope"><!-- ngIf: locals.fields.salutation && locals.fields.salutation.present --><div ng-if="locals.fields.salutation &amp;&amp; locals.fields.salutation.present" ng-class="locals.rowClass" class="pageBlockElement ng-scope row">
+    <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+		<h6 id="label" for="title" ng-class="{ 'labelRequired' : locals.fields.salutation.required }" class="ng-binding">Title</h6>
+    </div>
+    <!-- ngIf: !(locals.title.custom) && locals.titles --><div ng-if="!(locals.title.custom) &amp;&amp; locals.titles" class="ng-scope">
+      <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+        <select ng-model="locals.title" name="salutation" id="salutation" ng-options="title.name for title in locals.titles track by title.value" diy-required="" class="ng-pristine ng-untouched ng-valid"><option value="" class="ng-binding">choose title</option><option value="Mr." label="Mr.">Mr.</option><option value="Miss" label="Miss">Miss</option><option value="Mrs." label="Mrs.">Mrs.</option><option value="Ms." label="Ms.">Ms.</option><option value="custom" label="Custom Title">Custom Title</option></select>
+      </div>
+    </div><!-- end ngIf: !(locals.title.custom) && locals.titles -->
+    <!-- ngIf: locals.title.custom || !(locals.titles) -->
+    <input type="hidden" name="salutationGender" value="">
+</div><!-- end ngIf: locals.fields.salutation && locals.fields.salutation.present -->
+<!-- ngIf: locals.fields.firstName && locals.fields.firstName.present --><div ng-if="locals.fields.firstName &amp;&amp; locals.fields.firstName.present" ng-class="locals.rowClass" class="pageBlockElement ng-scope row">
+  <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+      <h6 id="label" for="firstName" ng-class="{ 'labelRequired' : locals.fields.firstName.required }" class="ng-binding labelRequired">First Name</h6>
+  </div>
+  <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+      <input type="text" ng-model="locals.firstName" name="firstName" size="40" id="firstName" diy-required="true" class="ng-pristine ng-untouched ng-valid" etrequired="true" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+  </div>
+</div><!-- end ngIf: locals.fields.firstName && locals.fields.firstName.present -->
+<!-- ngIf: locals.fields.initials && locals.fields.initials.present && locale === 'NL' -->
+<!-- ngIf: locals.fields.middleName && locals.fields.middleName.present --><div ng-if="locals.fields.middleName &amp;&amp; locals.fields.middleName.present" ng-class="locals.rowClass" class="pageBlockElement ng-scope row">
+  <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+      <h6 id="label" for="middleName" ng-class="{ 'labelRequired' : locals.fields.middleName.required }" class="ng-binding">Middle Name</h6>
+  </div>
+  <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+      <input type="text" ng-model="locals.middleName" name="middleName" size="40" id="middleName" diy-required="" class="ng-pristine ng-untouched ng-valid">
+  </div>
+</div><!-- end ngIf: locals.fields.middleName && locals.fields.middleName.present -->
+<!-- ngIf: locals.fields.lastName && locals.fields.lastName.present --><div ng-if="locals.fields.lastName &amp;&amp; locals.fields.lastName.present" ng-class="locals.rowClass" class="pageBlockElement ng-scope row">
+  <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+      <h6 id="label" for="lastName" ng-class="{ 'labelRequired' : locals.fields.lastName.required }" class="ng-binding labelRequired">Last Name</h6>
+  </div>
+  <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+      <input type="text" ng-model="locals.lastName" name="lastName" size="40" id="lastName" diy-required="true" class="ng-pristine ng-untouched ng-valid" etrequired="true">
+  </div>
+</div><!-- end ngIf: locals.fields.lastName && locals.fields.lastName.present -->
+<!-- ngIf: locals.fields.suffix && locals.fields.suffix.present --><div ng-if="locals.fields.suffix &amp;&amp; locals.fields.suffix.present" ng-class="locals.rowClass" class="pageBlockElement ng-scope row">
+  <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+      <h6 id="label" for="suffix" ng-class="{ 'labelRequired' : locals.fields.suffix.required }" class="ng-binding">Suffix</h6>
+  </div>
+  <div ng-class="locals.columnClass" class="col-sm-5 col-xs-12">
+      <input type="text" autocomplete="off" ng-model="locals.suffix" name="suffix" size="40" id="suffix" diy-required="" class="ng-pristine ng-untouched ng-valid">
+  </div>
+</div><!-- end ngIf: locals.fields.suffix && locals.fields.suffix.present -->
+<!-- ngIf: locale === 'ES' && locals.selectedCountry === 'ES' && locals.isTransactionPage === true --></ng-include><script type="text/JavaScript">
+var namesConfig = {"firstName":{"standard":true,"note":false,"userRequired":false,"dataType":0,"renderingtype":"simplefield","appliesTo":null,"rules":["ecFormRequired"],"title":"First Name","type":"systemStandardElement","inputName":"firstName","required":true,"default":false,"subtype":"standard","formRequired":true,"name":"First Name","block":"names_block","html":"","attributes":[],"id":"firstName","present":true,"hasRequirable":false},"lastName":{"standard":true,"note":false,"userRequired":false,"dataType":0,"renderingtype":"simplefield","appliesTo":null,"rules":["ecFormRequired"],"title":"Last Name","type":"systemStandardElement","inputName":"lastName","required":true,"default":false,"subtype":"standard","formRequired":true,"name":"Last Name","block":"names_block","html":"","attributes":[],"id":"lastName","present":true,"hasRequirable":false},"newNames":true,"middleName":{"standard":true,"note":false,"userRequired":false,"dataType":0,"renderingtype":"simplefield","appliesTo":null,"rules":[],"title":"Middle Name","type":"systemStandardElement","inputName":"middleName","default":false,"subtype":"standard","formRequired":false,"name":"Middle Name","block":"names_block","html":"","attributes":[],"id":"middleName","present":true,"hasRequirable":false},"salutation":{"standard":true,"note":false,"userRequired":false,"dataType":0,"renderingtype":"dropdown","appliesTo":null,"rules":[],"title":"Title","type":"systemStandardElement","inputName":"salutation","default":false,"subtype":"standard","formRequired":false,"name":"Title","options":[{"displayValue":"","ref":null,"price":null,"name":"choose title","id":"salutation_","type":"dropdown","present":true,"title":"choose title","inputName":"","element":"salutation"}],"block":"names_block","html":"","attributes":[],"id":"salutation","present":true,"hasRequirable":false},"suffix":{"standard":true,"note":false,"userRequired":false,"dataType":0,"renderingtype":"simplefield","appliesTo":null,"rules":[],"title":"Suffix","type":"systemStandardElement","inputName":"suffix","default":false,"subtype":"standard","formRequired":false,"name":"Suffix","block":"names_block","html":"","attributes":[],"id":"suffix","present":true,"hasRequirable":false}};
+</script></div></div>
+<div id="contact_block" class="block contact_block pageBlock row"><div id="ecCountryStateWidget" class=""><div id="country" class="pageBlockElement row"><div class="col-sm-5 col-xs-12"><h6 id="label">Country*</h6></div><div class="col-sm-5 col-xs-12"><select name="country" id="countryField" ng-model="locals.selectedCountry" etrequired="true" class="ng-pristine ng-untouched ng-valid"><option value="" selected="selected">(None Selected)</option><option value="AU">Australia</option><option value="CA">Canada</option><option value="NZ">New Zealand</option><option value="US">United States</option></select><div style="clear:both;"></div></div></div><div id="addressFieldsDiv" style="display: none;">
+
+
+
+
+
+
+
+
+</div><div id="address" class="systemStandardElement standard pageBlockElement row" style="display: block;"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">Address Lines*</h6></div><div class="col-sm-5 col-xs-12"><textarea id="addressField" type="text" name="address" etrequired="true"></textarea></div><div class="clearingDiv" style="clear:both;"></div></div><div id="city" class="systemStandardElement standard pageBlockElement row" style="display: block;"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">City/Town/District*</h6></div><div class="col-sm-5 col-xs-12"><input id="cityField" type="text" name="city" etrequired="true"></div><div class="clearingDiv" style="clear:both;"></div></div><div id="state" class="systemStandardElement standard pageBlockElement row" style="display: block;"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">State/Province/Region</h6></div><div class="col-sm-5 col-xs-12"><input id="stateField" type="text" name="state" etrequired="true"></div><div class="clearingDiv" style="clear:both;"></div></div><div id="postalCode" class="systemStandardElement standard pageBlockElement row" style="display: block;"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">Postal Code</h6></div><div class="col-sm-5 col-xs-12"><input id="postalCodeField" type="text" name="postalCode" etrequired="true"></div><div class="clearingDiv" style="clear:both;"></div></div><div id="county" class="systemStandardElement standard pageBlockElement row" style="display: block;"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">County</h6></div><div class="col-sm-5 col-xs-12"><input id="countyField" type="text" name="county" etrequired="true"></div><div class="clearingDiv" style="clear:both;"></div></div></div><div id="email" class="systemStandardElement standard pageBlockElement row"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">Email*</h6></div><div class="col-sm-5 col-xs-12"><input id="emailField" type="text" name="email" etrequired="true"></div><div class="clearingDiv" style="clear:both;"></div></div>
+<div id="confirmEmail" class="systemStandardElement standard pageBlockElement row"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">Confirm Email*</h6></div><div class="col-sm-5 col-xs-12"><input id="confirmEmailField" type="text" name="confirmEmail" etrequired="true"></div><div class="clearingDiv" style="clear:both;"></div></div>
+<div id="phone" class="systemStandardElement standard pageBlockElement row"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">Phone*</h6></div><div class="col-sm-5 col-xs-12"><input id="phoneField" type="text" name="phone" etrequired="true"></div><div class="clearingDiv" style="clear:both;"></div></div>
+</div>
+</div><div id="payment_information_region" class="pageRegion"><div class="ecRegionHeader row"><h1 class="regionTitle">Payment Information</h1></div><div id="payment_widget_block" class="block payment_widget_block pageBlock row"><div id="ecPaymentWidget" class=""><div id="amount" class="systemStandardElement standard pageBlockElement row"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">Amount*</h6></div><div class="col-sm-5 col-xs-12"><h6 class="currencySymbol text-right">$</h6><input id="amountField" type="text" name="amount" etrequired="true" readonly="true"></div><div class="clearingDiv" style="clear:both;"></div></div>
+<div id="creditOnly" class="systemStandardElement standard pageBlockElement row"><div class="col-sm-5 col-xs-12"><h6 id="label" class="simplefieldType">Payment Type</h6></div><div class="col-sm-5 col-xs-12"><input id="creditOnlyField" type="text" name="" readonly="true" value="Credit/Debit Card"></div><div class="clearingDiv" style="clear:both;"></div></div>
+<div class="systemStandardElement standard pageBlockElement row" style="padding: 10px 25px 10px 25px;">We only accept credit/debit card payments. After you complete this form, select <b>Submit</b> to enter your card details into our secure transaction processor. Your submission will be processed when you finalize your secure payment information.</div>
+<div style="clear:both;"></div></div></div>
+</div><div id="comments_box_region" class="pageRegion"><div id="comments_box" class="placeholder comments_box pageBlock row">
+
+          <div class="pageBlockElement row">
+            <div class="col-xs-12">
+              <h6 id="label" class="commentsLabel">Additional Comments</h6>
+              <textarea name="comments" id="commentsBox" cols="32" rows="3"></textarea>
+            </div>
+          </div>
+
+        </div>
+</div><div id="page_bottom_region" class="pageRegion"><div id="page_bottom_widget_block" class="block page_bottom_widget_block pageBlock row"><div id="submitSection"><div class="col-sm-12 col-xs-12"><input id="submitButton" type="button" name="submitButton" value="Submit" style="width:80px;"></div></div><div id="bottomLogos" class="etapPoweredBy defaultFont bottomDiv col-xs-12 "><img id="blackbaudLogo" src="donateimages/blackbaudLogo.png"><span id="poweredByText">Powered by <a href="https://www.blackbaud.com/fundraising-crm/etapestry-donor-management.aspx" title="eTapestry">eTapestry</a></span></div><div class="clear"></div></div>
+</div>
+        </div>
