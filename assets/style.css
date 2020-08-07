@@ -161,6 +161,10 @@ html {
 	/* cursor:pointer; */
 }
 
+.sketched:focus {
+	outline:none;
+}
+
 .pointer {
 	cursor:pointer;
 }
