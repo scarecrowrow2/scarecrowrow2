@@ -18,6 +18,14 @@
 	src:url("happy.ttf");
 }
 
+.sunshine {
+	font-family: 'A little sunshine', serif;
+}
+
+label.sunshine {
+	font-size:2rem;
+}
+
 h1 {
 	font-family: 'happy', serif;
 	font-size:6rem;

@@ -29,6 +29,15 @@
 
 	  gtag('config', 'UA-121420262-1');
 
+		function showName(e,target) {
+			let val = e.checked;
+			if(val) {
+				document.getElementById(target).removeAttribute("hidden")
+				console.log("changed")
+			} else {
+				document.getElementById(target).setAttribute("hidden","true")
+			}
+		}
 
 	</script>
 
@@ -39,14 +48,21 @@
 		<br><br><br>
 		<!-- TODO: Change to Jill's email -->
 		<form action="https://formsubmit.co/3jbc22@gmail.com" method="POST">
-			<input type="hidden" name="_cc" value="3jbc22@gmail.com">
 			<input type="text" name="Name" class="sketched" placeholder="Your name*" required><br><br>
 			<input type="text" name="email" class="sketched" placeholder="Your email*" required><br><br>
 			<input type="text" name="Phone Number" class="sketched" placeholder="Your phone number*" required><br><br>
+			<b>I am comitting to:</b><br>
+			<input type="checkbox" id="cbox" onchange="showName(this,'sc_name')"><label for="cbox" class="sunshine">Making a scarecrow and forming a team to support Madi's House under my team/scarecrow's name.</label><br>
+			<input type="text" placeholder="Your Scarecrow's Name" id="sc_name" hidden class="sketched"><br>
+			<input type="checkbox" id="cbox2" onchange="showName(this,'team_name')"><label for="cbox2" class="sunshine">Supporting a team with my donation to Madi's house</label><br>
+			<input type="text" placeholder="Your Team's Name" id="team_name" hidden class="sketched"><br>
+			<input type="checkbox" id="cbox3"><label for="cbox3" class="sunshine">Donating to support Madi's house</label><br><br>
+
 			<input type="hidden" name="_template" value="table">
-			<input type="hidden" name="_autoresponse" value="Thank you for signing up for Scarecrow Row! We will be in touch. If you need us, please feel free to contact us at scarecrowrowcincinnati@gmail.com!">
+			<!-- <input type="hidden" name="_autoresponse" value="Thank you for signing up for Scarecrow Row! We will be in touch. If you need us, please feel free to contact us at scarecrowrowcincinnati@gmail.com!"> -->
 			<input type="hidden" name="_captcha" value="false">
 			<input type="hidden" name="_next" value="https://scarecrowrow.org/thanks">
+			<input type="hidden" name="_cc" value="3jbc22@gmail.com">
 			<input type="submit" class="sketched" value="Submit!">
 		</form>
 		<br><b><a href="index">Home</a></b>
