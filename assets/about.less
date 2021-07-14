@@ -1,0 +1,134 @@
+body, html {
+  padding:0;
+  margin:0;
+  font-family:sans-serif;
+}
+
+@font-face {
+	font-family:"happy";
+	src:url("happy.ttf");
+}
+
+@font-face {
+	font-family:"A little sunshine";
+	src:url("sunshine.ttf");
+}
+
+.hero {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:50vh;
+  top: -35vh;
+
+  position:sticky;
+
+  background: url(images/backg.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .hero--content {
+    min-height:15vh;
+    position:sticky;
+    top:0;
+
+    text-align:center;
+    h1 {
+      font-family: 'happy', sans-serif;
+      font-size: 6rem;
+      letter-spacing: 5px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding:10px;
+      margin:10px;
+      background:white;
+      border-top-left-radius: 255px 15px;
+      border-top-right-radius: 15px 225px;
+      border-bottom-right-radius: 225px 15px;
+      border-bottom-left-radius: 15px 255px;
+      transition:.3s;
+    }
+
+    h2 {
+      font-size:2rem;
+    }
+
+    &.scrolled {
+      display:flex;
+      align-items: center;
+      h1 {
+        font-size:3rem;
+      }
+      h2 {
+        text-decoration-line: underline;
+        text-decoration-color: white;
+        text-decoration-thickness: 10px;
+        font-size:1.5rem;
+      }
+    }
+  }
+}
+
+article {
+  .paragraph {
+    font-size:18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin:10% 20%;
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1199px) {
+    margin:10% 15%;
+  }
+  @media screen and (min-width: 800px) and (max-width: 999px) {
+    margin:10%;
+  }
+  @media screen and (max-width: 799px) {
+    margin:10% 5%;
+  }
+}
+
+a.reset {
+  color:inherit;
+  text-decoration:inherit;
+}
+
+a.btn {
+  &.sketched {
+    background:transparent;
+    padding:0.5rem 0.5rem;
+    margin:0 0.5rem;
+    /* font-size:1rem; */
+  
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+  
+    border:solid 3px black;
+  
+    font-family: 'A little Sunshine',sans-serif;
+    font-size: 2rem;
+    text-decoration:none;
+  
+    color:black;
+  
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    background: url(images/backg.jpeg) no-repeat top center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+    cursor:pointer;
+  }
+}
+
+.center {
+  margin: 0 auto;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/about.css">
+<body>
+  <header class="hero">
+    <div class="hero--content">
+      <a href="/" class="reset"><h1>Scarecrow Row</h1></a>
+      <h2>About Scarecrow Row</h2>
+    </div>
+  </header>
+  <article>
+    <p class="paragraph">
+      Scarecrow Row is a fun fall installation of unique and creative scarecrows set along the 2-mile bike and walking trail of Otto Armleder Park, located on Cincinnati’s eastside next to Lunken Airport and Playfield.
+    </p>
+    <p class="paragraph">
+      Individuals, organizations and businesses submit one of a kind, themed scarecrows, that will amuse and entertain visitors throughout the month of October. It’s free and family friendly
+    </p>
+    <p class="paragraph">
+      Scarecrow Row is a proud supporter of Madi’s House, a relapse prevention and mental health community center, serving young adults battling addiction and mental health illness in the greater Cincinnati area.
+    </p>
+    <p class="paragraph">
+      For each scarecrow that is submitted we are hoping to raise $250 for this great cause. You can donate individually, or create a team to collectively raise the donation. Form your team today to raise money in support of Madi’s House. We need you to help make Scarecrow Row for Madi’s House a success, so that we can best serve the young adults who battle their illness every day.
+    </p>
+    <p class="paragraph">
+      If it’s been a tough year, and you are only able to create a scarecrow that will delight the community, we understand and would still love to accept your creation. 
+    </p>
+    <p class="paragraph">
+      You’ll also definitely want to pack a picnic lunch or dinner, and bring your family down to experience Scarecrow Row.
+    </p>
+    <a href="signup.html" class="btn sketched">Ready to build your scarecrow?</a>
+  </article>
+</body>
+<script>
+  window.addEventListener('scroll', (evt) => {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector('.hero--content').classList.add('scrolled');
+    } else {
+      document.querySelector(".hero--content").classList.remove('scrolled');
+    }
+  })
+</script>
+</html>
