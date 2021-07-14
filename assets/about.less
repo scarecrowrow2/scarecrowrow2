@@ -19,9 +19,11 @@ body, html {
   align-items: center;
   justify-content: center;
   height:50vh;
-  top: -30vh;
 
-  position:sticky;
+  @media screen and (min-width: 700px) {
+    top: -30vh;
+    position:sticky;
+  }
 
   background: url(images/backg.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -30,9 +32,11 @@ body, html {
   background-size: cover;
 
   .hero--content {
-    min-height:20vh;
-    position:sticky;
-    top:0;
+    @media screen and (min-width: 700px) {
+      min-height:20vh;
+      position:sticky;
+      top:0;
+    }
 
     text-align:center;
     h1 {
@@ -56,16 +60,18 @@ body, html {
     }
 
     &.scrolled {
-      display:flex;
-      align-items: center;
-      h1 {
-        font-size:3rem;
-      }
-      h2 {
-        text-decoration-line: underline;
-        text-decoration-color: white;
-        text-decoration-thickness: 10px;
-        font-size:1.5rem;
+      @media screen and (min-width: 700px) {
+        display:flex;
+        align-items: center;
+        h1 {
+          font-size:3rem;
+        }
+        h2 {
+          text-decoration-line: underline;
+          text-decoration-color: white;
+          text-decoration-thickness: 10px;
+          font-size:1.5rem;
+        }
       }
     }
   }

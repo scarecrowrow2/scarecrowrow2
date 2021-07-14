@@ -17,19 +17,27 @@ html {
   align-items: center;
   justify-content: center;
   height: 50vh;
-  top: -30vh;
-  position: sticky;
   background: url(images/backg.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+@media screen and (min-width: 700px) {
+  .hero {
+    top: -30vh;
+    position: sticky;
+  }
+}
 .hero .hero--content {
-  min-height: 20vh;
-  position: sticky;
-  top: 0;
   text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .hero .hero--content {
+    min-height: 20vh;
+    position: sticky;
+    top: 0;
+  }
 }
 .hero .hero--content h1 {
   font-family: 'happy', sans-serif;
@@ -49,18 +57,20 @@ html {
 .hero .hero--content h2 {
   font-size: 2rem;
 }
-.hero .hero--content.scrolled {
-  display: flex;
-  align-items: center;
-}
-.hero .hero--content.scrolled h1 {
-  font-size: 3rem;
-}
-.hero .hero--content.scrolled h2 {
-  text-decoration-line: underline;
-  text-decoration-color: white;
-  text-decoration-thickness: 10px;
-  font-size: 1.5rem;
+@media screen and (min-width: 700px) {
+  .hero .hero--content.scrolled {
+    display: flex;
+    align-items: center;
+  }
+  .hero .hero--content.scrolled h1 {
+    font-size: 3rem;
+  }
+  .hero .hero--content.scrolled h2 {
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 10px;
+    font-size: 1.5rem;
+  }
 }
 article .paragraph {
   font-size: 18px;
