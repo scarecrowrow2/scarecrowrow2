@@ -70,6 +70,14 @@ html {
 	image-orientation: from-image;
 }
 
+.past::after {
+  color:blue;
+}
+
+.past:hover::after {
+  color:green;
+}
+
 .swipe{
     overflow-x:auto;
     overflow-y:visible;

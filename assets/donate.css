@@ -1,0 +1,20 @@
+form.donation-collection-form {
+  justify-content: center;
+  align-items: center;
+}
+form.donation-collection-form .donation-amount {
+  font-size: 88px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+form.donation-collection-form .donation-amount input {
+  font-size: inherit;
+  width: 200px;
+}
+form.donation-collection-form input[type=range] {
+  width: 100%;
+  display: block;
+}
+.d-centered {
+  display: block!important;
+}

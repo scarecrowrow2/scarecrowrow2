@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scarecrow Row Cincinnati | About</title>
   <link rel="stylesheet" href="assets/about.css">
+  <link rel="stylesheet" href="assets/donate.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Scarecrow Row Cincinnati | About">
@@ -25,27 +26,17 @@
 <body>
   <header class="hero">
     <div class="hero--content">
-      <a href="/" class="reset"><h1>About Scarecrow Row</h1></a>
-      <!-- <h2>About Scarecrow Row</h2> -->
+      <a href="/" class="reset"><h1>Scarecrow Row</h1></a>
+      <h2>Donate</h2>
     </div>
   </header>
   <article>
-    <p class="paragraph">
-      Scarecrow Row is a fun fall installation of unique and creative scarecrows set along the 2-mile bike and walking trail of Otto Armleder Park, located on Cincinnati’s eastside next to Lunken Airport and Playfield.
-    </p>
-    <p class="paragraph">
-      We ask individuals, organizations and businesses to submit one of a kind, themed scarecrows, that will amuse and entertain visitors throughout the month of October. 
-    </p>
-    <p class="paragraph">
-      Scarecrow Row is a proud supporter of Madi’s House, a relapse prevention and mental health community center, serving young adults battling addiction and mental health illness in the greater Cincinnati area.
-    </p>
-    <p class="paragraph">
-      For each scarecrow that is submitted we are hoping to raise $250 for Madi’s House. You can donate individually, or create a team to collectively raise the money. If you form a team, don’t forget to name it so we can track your donations, and give you the credit you deserve. We need you to help make Scarecrow Row for Madi’s House a success, so that we can best serve the young adults who battle their illness every day.
-    </p>
-    <p class="paragraph">
-      However, we do know that it’s been a tough year for some. If you only want to build a scarecrow, we would gladly accept it. You can also just give what you can. 
-    </p>
-    <a href="signup.html" class="btn sketched">Ready to build your scarecrow?</a>
+    <h2>Enter how much you wish to donate, then click continue</h2>
+    <form onload="(e) => {e.target.preventDefault()}" class="donation-collection-form">
+      <p class="donation-amount">$<input type="number" value="50" size="4"></p>
+      <input class="slider" type="range" min="0" max="500" value="50">
+      <a onclick="javascript:submitDonation()" id="submitbtn" class="btn sketched d-centered">Submit</a>
+    </form>
   </article>
   <footer>
     <p href="/" class="footer-item"><a href="#" class="reset">Scarecrow Row Home</a></p>
@@ -62,5 +53,37 @@
       document.querySelector(".hero--content").classList.remove('scrolled');
     }
   })
+
+  document.querySelector('input.slider').addEventListener('input', (evt) => {
+    document.querySelector('.donation-amount').querySelector('input').value = `${evt.target.value}`
+    console.log(evt.target.value)
+  })
+
+  function submitDonation () {
+    const value = document.querySelector('.donation-amount').querySelector('input').value
+    console.log(`Generating a donation link for ${value}`)
+    if(value != '' && value != 0.99) {
+        document.querySelector('#submitbtn').value = 'Loading...'
+        
+        let myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        let raw = JSON.stringify({"amount":value});
+
+        let requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+        };
+
+        fetch("https://api.scarecrowrow.org/generate-payment-link", requestOptions)
+          .then(response => response.text())
+          .then(result => document.location.href = (result))
+          .catch(error => console.log('error', error));
+      } else {
+        alert('Please set an amount more than $0.99')
+      }
+  }
 </script>
 </html>
