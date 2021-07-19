@@ -43,13 +43,13 @@ body, html {
     text-align:center;
     h1 {
       font-family: 'happy', sans-serif;
-      font-size: 6rem;
+      font-size: 5rem;
       letter-spacing: 5px;
       margin-block-start: 0;
       margin-block-end: 0;
       padding:10px 50px;
       margin:10px;
-      background:white;
+      // background:white;
       border-top-left-radius: 255px 15px;
       border-top-right-radius: 15px 225px;
       border-bottom-right-radius: 225px 15px;
@@ -62,19 +62,19 @@ body, html {
     }
 
     &.scrolled {
-      @media screen and (min-width: 700px) {
-        display:flex;
-        align-items: center;
-        h1 {
-          font-size:3rem;
-        }
-        h2 {
-          text-decoration-line: underline;
-          text-decoration-color: white;
-          text-decoration-thickness: 10px;
-          font-size:1.5rem;
-        }
-      }
+      // @media screen and (min-width: 700px) {
+      //   display:flex;
+      //   align-items: center;
+      //   h1 {
+      //     font-size:3rem;
+      //   }
+      //   h2 {
+      //     text-decoration-line: underline;
+      //     text-decoration-color: white;
+      //     text-decoration-thickness: 10px;
+      //     font-size:1.5rem;
+      //   }
+      // }
     }
   }
 }
@@ -85,16 +85,16 @@ article {
   }
 
   @media screen and (min-width: 1200px) {
-    margin:10% 20%;
+    margin:5% 20%;
   }
   @media screen and (min-width: 1000px) and (max-width: 1199px) {
-    margin:10% 15%;
+    margin:5% 15%;
   }
   @media screen and (min-width: 800px) and (max-width: 999px) {
-    margin:10%;
+    margin:5% 10%;
   }
   @media screen and (max-width: 799px) {
-    margin:10% 5%;
+    margin:5% 5%;
   }
   margin-bottom: 2%!important;
 }
@@ -102,6 +102,42 @@ article {
 a.reset {
   color:inherit;
   text-decoration:inherit;
+}
+
+.btn {
+  background:transparent;
+  padding:0.5rem 0.5rem;
+  margin:0.5rem;
+  font-family: 'A little Sunshine',serif;
+  font-size: 2rem;
+  letter-spacing:2px;
+  text-decoration:none;
+  color:black;
+  display:inline-block;
+  font-weight:bold;
+  &.sketched {
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+
+    border:solid 3px black;
+  }
+  &.underline {
+    text-decoration:solid underline blue;
+    color:blue;
+  }
+  &.bg {
+    background: url(images/backg.jpeg) no-repeat top center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display:inline-block;
+  
+    cursor:pointer;
+  }
 }
 
 a.btn {

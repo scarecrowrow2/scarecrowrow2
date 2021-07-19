@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "happy";
+  src: url("happy.ttf");
+}
 form.donation-collection-form {
   justify-content: center;
   align-items: center;
@@ -5,7 +9,7 @@ form.donation-collection-form {
 form.donation-collection-form .donation-amount {
   font-size: 88px;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 form.donation-collection-form .donation-amount input {
   font-size: inherit;
@@ -15,6 +19,43 @@ form.donation-collection-form input[type=range] {
   width: 100%;
   display: block;
 }
+fieldset {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+input[type=text],
+input[type=number] {
+  padding: 10px 15px;
+  width: 50%;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+  border: solid 3px black;
+  font-size: 18px;
+}
+input[type=text].bottompadded,
+input[type=number].bottompadded {
+  margin-bottom: 5px;
+}
+input[type=text]:focus,
+input[type=number]:focus {
+  outline: none;
+}
+input[type=text]:disabled,
+input[type=number]:disabled {
+  border-color: darkgrey;
+  background: lightgrey;
+}
 .d-centered {
   display: block!important;
+}
+.hero--content h2 {
+  margin: 0;
+  font-family: 'happy', sans-serif;
+  font-size: 3.5rem !important;
+  letter-spacing: 3px;
 }

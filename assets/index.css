@@ -31,6 +31,9 @@ body {
 .reset {
   color: inherit;
 }
+.big {
+  font-size: 3rem!important;
+}
 header .banner-image {
   height: 160px;
 }
@@ -85,21 +88,30 @@ main .carousel::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #555;
 }
-.btn.sketched {
+.btn {
   background: transparent;
   padding: 0.5rem 0.5rem;
   margin: 0.5rem;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  border-bottom-right-radius: 225px 15px;
-  border-bottom-left-radius: 15px 255px;
-  border: solid 3px black;
   font-family: 'A little Sunshine', serif;
   font-size: 2rem;
   text-decoration: none;
   color: black;
   display: inline-block;
   font-weight: bold;
+}
+.btn.sketched {
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+  border: solid 3px black;
+}
+.btn.underline {
+  text-decoration: solid underline blue;
+  color: blue;
+}
+.previous-scarecrows {
+  padding-top: 30px;
 }
 footer {
   align-items: center;

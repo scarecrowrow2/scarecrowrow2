@@ -26,16 +26,35 @@
 <body>
   <header class="hero">
     <div class="hero--content">
-      <a href="/" class="reset"><h1>Scarecrow Row</h1></a>
-      <h2>Donate</h2>
+      <a href="/" class="reset"><h1>Donate with Scarecrow Row</h1></a>
+      <h2 class="sunshine">For Madi's House</h2>
     </div>
   </header>
   <article>
+    <!-- <h2>Enter your information</h2> -->
+    <div>
+      <fieldset>
+        <h2>Choose one of the following:</h2>
+        <div>
+          <input type="radio" name="dono_type" id="indiv" onclick="(evt) => console.log(evt)"> <label for="indiv">I am donating as an individual</label><br>
+        </div>
+        <br>
+        <div class="input-section">
+          <input type="radio" name="dono_type" id="team"> <label for="team">I am donating with a team</label><br>
+        </div>
+      </feildset>
+      <div>
+        <h2>Please fill out your information:</h2>
+        <input type="text" name="" id="name" placeholder="Your first and last name" class="input bottompadded">
+        <input type="number" name="" id="phonenum" placeholder="Your phone number" class="input bottompadded">
+        <input type="text" name="" id="teamname" placeholder="Enter your team name here" class="input bottompadded" hidden>
+      </div>
+    </div>
     <h2>Enter how much you wish to donate, then click continue</h2>
     <form onload="(e) => {e.target.preventDefault()}" class="donation-collection-form">
       <p class="donation-amount">$<input type="number" value="50" size="4"></p>
-      <input class="slider" type="range" min="0" max="500" value="50">
-      <a onclick="javascript:submitDonation()" id="submitbtn" class="btn sketched d-centered">Submit</a>
+      <p>If you do not wish to donate, simply enter '0' in the box.</p>
+      <a onclick="javascript:submitDonation()" id="submitbtn" class="btn sketched d-centered">Continue</a>
     </form>
   </article>
   <footer>
@@ -54,13 +73,21 @@
     }
   })
 
-  document.querySelector('input.slider').addEventListener('input', (evt) => {
-    document.querySelector('.donation-amount').querySelector('input').value = `${evt.target.value}`
-    console.log(evt.target.value)
+  document.querySelector('#indiv').addEventListener('input', (evt) => {
+    document.querySelector('#teamname').style.display = 'none'
+  })
+
+  document.querySelector('#team').addEventListener('input', (evt) => {
+    document.querySelector('#teamname').style.display = 'initial'
   })
 
   function submitDonation () {
     const value = document.querySelector('.donation-amount').querySelector('input').value
+    const name = document.querySelector('#name').value
+    const phonenum = document.querySelector('#phonenum').value
+    const dono_with_team = document.querySelector('#team').checked
+    const teamname = dono_with_team ? document.querySelector('#teamname').value : 'Donating as an individual'
+
     console.log(`Generating a donation link for ${value}`)
     if(value != '' && value != 0.99) {
         document.querySelector('#submitbtn').value = 'Loading...'
@@ -68,7 +95,13 @@
         let myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
 
-        let raw = JSON.stringify({"amount":value});
+        let raw = JSON.stringify({
+          amount:value,
+          name:name,
+          phonenum:phonenum,
+          teamname:teamname,
+          dono_with_team:dono_with_team
+        });
 
         let requestOptions = {
           method: 'POST',
@@ -76,7 +109,6 @@
           body: raw,
           redirect: 'follow'
         };
-
         fetch("https://api.scarecrowrow.org/generate-payment-link", requestOptions)
           .then(response => response.text())
           .then(result => document.location.href = (result))
