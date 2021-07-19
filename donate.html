@@ -47,6 +47,7 @@
         <h2>Please fill out your information:</h2>
         <input type="text" name="" id="name" placeholder="Your first and last name" class="input bottompadded">
         <input type="number" name="" id="phonenum" placeholder="Your phone number" class="input bottompadded">
+        <input type="email" name="" id="email" placeholder="Your email" class="input bottompadded">
         <input type="text" name="" id="teamname" placeholder="Enter your team name here" class="input bottompadded" hidden>
       </div>
     </div>
@@ -58,10 +59,6 @@
     </form>
   </article>
   <footer>
-    <p href="/" class="footer-item"><a href="#" class="reset">Scarecrow Row Home</a></p>
-    <p href="/" class="footer-item"><a href="#" class="reset">Contact us</a></p>
-    <p href="/" class="footer-item"><a href="#" class="reset">Media</a></p>
-    <p href="/" class="footer-item"><a href="#" class="reset">Website built by Jack Crane</a></p>
   </footer>
 </body>
 <script>
@@ -85,6 +82,7 @@
     const value = document.querySelector('.donation-amount').querySelector('input').value
     const name = document.querySelector('#name').value
     const phonenum = document.querySelector('#phonenum').value
+    const email = document.querySelector('#email').value
     const dono_with_team = document.querySelector('#team').checked
     const teamname = dono_with_team ? document.querySelector('#teamname').value : 'Donating as an individual'
 
@@ -99,6 +97,7 @@
           amount:value,
           name:name,
           phonenum:phonenum,
+          email:email,
           teamname:teamname,
           dono_with_team:dono_with_team
         });

@@ -27,7 +27,8 @@ fieldset {
   font-size: 18px;
 }
 input[type=text],
-input[type=number] {
+input[type=number],
+input[type=email] {
   padding: 10px 15px;
   width: 50%;
   border-top-left-radius: 255px 15px;
@@ -38,15 +39,18 @@ input[type=number] {
   font-size: 18px;
 }
 input[type=text].bottompadded,
-input[type=number].bottompadded {
+input[type=number].bottompadded,
+input[type=email].bottompadded {
   margin-bottom: 5px;
 }
 input[type=text]:focus,
-input[type=number]:focus {
+input[type=number]:focus,
+input[type=email]:focus {
   outline: none;
 }
 input[type=text]:disabled,
-input[type=number]:disabled {
+input[type=number]:disabled,
+input[type=email]:disabled {
   border-color: darkgrey;
   background: lightgrey;
 }
