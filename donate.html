@@ -56,7 +56,9 @@
     <form onload="(e) => {e.target.preventDefault()}" class="donation-collection-form">
       <p class="donation-amount">$<input type="number" value="50" size="4"></p>
       <p>If you do not wish to donate, simply enter '0' in the box.</p>
-      <a onclick="javascript:submitDonation()" id="submitbtn" class="btn sketched d-centered">Continue</a>
+      <a onclick="javascript:submitDonation()" id="submitbtn" class="btn sketched d-centered">Continue</a><br>
+      <a onclick="javascript:submitDonation(0)" id="submitbtn" class="btn sketched d-centered">Continue without donating</a>
+
     </form>
   </article>
   <footer>
@@ -79,8 +81,7 @@
     document.querySelector('#teamname').style.display = 'initial'
   })
 
-  function submitDonation () {
-    const value = document.querySelector('.donation-amount').querySelector('input').value
+  function submitDonation (value = document.querySelector('.donation-amount').querySelector('input').value) {
     const name = document.querySelector('#name').value
     const phonenum = document.querySelector('#phonenum').value
     const email = document.querySelector('#email').value
@@ -88,34 +89,30 @@
     const teamname = dono_with_team ? document.querySelector('#teamname').value : 'Donating as an individual'
 
     console.log(`Generating a donation link for ${value}`)
-    if(value != '' && value != 0.99) {
-        document.querySelector('#submitbtn').value = 'Loading...'
-        
-        let myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
+    document.querySelector('#submitbtn').value = 'Loading...'
+    
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
 
-        let raw = JSON.stringify({
-          amount:value,
-          name:name,
-          phonenum:phonenum,
-          email:email,
-          teamname:teamname,
-          dono_with_team:dono_with_team
-        });
+    let raw = JSON.stringify({
+      amount:value,
+      name:name,
+      phonenum:phonenum,
+      email:email,
+      teamname:teamname,
+      dono_with_team:dono_with_team
+    });
 
-        let requestOptions = {
-          method: 'POST',
-          headers: myHeaders,
-          body: raw,
-          redirect: 'follow'
-        };
-        fetch("https://api.scarecrowrow.org/generate-payment-link", requestOptions)
-          .then(response => response.text())
-          .then(result => document.location.href = (result))
-          .catch(error => console.log('error', error));
-      } else {
-        alert('Please set an amount more than $0.99')
-      }
+    let requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    fetch("https://api.scarecrowrow.org/generate-payment-link", requestOptions)
+      .then(response => response.text())
+      .then(result => document.location.href = (result))
+      .catch(error => console.log('error', error));
   }
 </script>
 </html>
