@@ -42,7 +42,7 @@
         <div class="input-section">
           <input type="radio" name="dono_type" id="team"> <label for="team">I am donating with a team</label><br>
         </div>
-        <p>If you do not wish to donate, simply enter '0' in the donation box and we will know.</p>
+        <p>If you do not wish to donate, simply click continue without donating below.</p>
       </feildset>
       <div>
         <h2>Please fill out your information:</h2>
@@ -52,12 +52,11 @@
         <input type="text" name="" id="teamname" placeholder="Enter your team name here" class="input bottompadded" hidden>
       </div>
     </div>
+    <a onclick="javascript:submitDonation(0)" id="submitbtn" class="btn sketched d-centered">Continue without donating</a>
     <h2>Enter how much you wish to donate, then click continue</h2>
     <form onload="(e) => {e.target.preventDefault()}" class="donation-collection-form">
       <p class="donation-amount">$<input type="number" value="50" size="4"></p>
       <a onclick="javascript:submitDonation()" id="submitbtn" class="btn sketched d-centered">Continue</a><br>
-      <a onclick="javascript:submitDonation(0)" id="submitbtn" class="btn sketched d-centered">Continue without donating</a>
-
     </form>
   </article>
   <footer>
