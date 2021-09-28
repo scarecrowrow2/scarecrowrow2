@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scarecrow Row Cincinnati | About</title>
+  <link rel="stylesheet" href="assets/about.css">
+  <link rel="stylesheet" href="assets/donate.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Scarecrow Row Cincinnati | About">
+  <meta property="og:description" content="A community art exhibition at Armleder Park.">
+  <meta property="og:image" content="https://scarecrowrow.org/assets/images/favicon_clear.png">
+  <meta property="og:site_name" content="Scarecrow Row">
+  <meta name="twitter:image:alt" content="Cincinnati Scarecrow Row">
+  <meta name="title" content="Scarecrow Row Cincinnati">
+  <meta name="description" content="A community art installation in Cincinnati Ohio.">
+  <meta name="keywords"
+    content="scarecrow,scarecrow row,cincinnati,scarecrow row cincinnati, fall activities, fall,activities,armleder">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="15 days">
+  <meta name="author" content="Scarecrow Row Cincinnati">
+<body>
+  <header class="hero">
+    <div class="hero--content">
+      <a href="/" class="reset"><h1>Donate with Scarecrow Row</h1></a>
+    </div>
+  </header>
+  <article>
+    <!-- <h2>Enter your information</h2> -->
+    <!-- https://api.scarecrowrow.org/donate-and-vote -->
+    <form method="POST" action="http://localhost/donate-and-vote">
+      <h2>Select what scarecrow you would like to support:</h2>
+      <input type="text" name="vote" placeholder="Enter a scarecrow name..." list="scarecrows" id="scarecrow-select">
+      <datalist id="scarecrows">
+        <option value='Gingy'>
+          <option value='Bewitched'>
+          <option value='Mr. Scarecrow and Friends'>
+          <option value='Peace, Love and Hippiness'>
+          <option value='Madisonville Rec Center'>
+          <option value="Don't Be A Goomba">
+          <option value='Evanston Rec. Center- (have)'>
+          <option value='Q102’s Joe BurrCROW'>
+          <option value='"Brick and Horror"'>
+          <option value='Paddlefest '>
+          <option value='Madi and Jon'>
+          <option value='Ghouls on the Run'>
+          <option value='McNicholas Hope Squad'>
+          <option value='Corryville Rec. Center'>
+          <option value='Anderson Hope Squad - HOPEy Harold'>
+          <option value='Pleaseant Ridge Rec. Center'>
+          <option value='Over The Rhine Rec. Center'>
+          <option value='Millvale Rec Center'>
+          <option value='"Hayride" - The Johnson Family'>
+          <option value='Westwood Town Hall'>
+          <option value='Hyde Park Landscaping'>
+          <option value='Karma Wellnes Studio'>
+          <option value='Zion Lutheran Church'>
+          <option value="PSU, Inc. - 'I Y'am What I Y'am.'">
+          <option value='"Gotta Dance"'>
+          <option value='Jack Skellington'>
+          <option value="Q102-FM's - 'QT'">
+      </datalist>
+      <br><br>
+      <input type="number" name="amount" value="" size="4" placeholder="How much would you like to donate?">
+      
+      <input type="submit" id="submitbtn" class="btn sketched d-centered"></button>
+
+      <p>We will redirect you to our secure payments handling partner, Stripe. Thank you for your support of Scarecrow Row and Madi's House.</p>
+    </form>
+  </article>
+  <footer>
+  </footer>
+</body>
+<script>
+  window.addEventListener('scroll', (evt) => {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector('.hero--content').classList.add('scrolled');
+    } else {
+      document.querySelector(".hero--content").classList.remove('scrolled');
+    }
+  })
+
+  document.querySelector('#scarecrow-select').value = window.location.href.split('?')[1]
+
+  // function submitDonation (value = document.querySelector('.donation-amount').querySelector('input').value) {
+  //   const name = document.querySelector('#name').value
+  //   const phonenum = document.querySelector('#phonenum').value
+  //   const email = document.querySelector('#email').value
+  //   const dono_with_team = document.querySelector('#team').checked
+  //   const teamname = dono_with_team ? document.querySelector('#teamname').value : 'Donating as an individual'
+
+  //   console.log(`Generating a donation link for ${value}`)
+  //   document.querySelector('#submitbtn').value = 'Loading...'
+    
+  //   let myHeaders = new Headers();
+  //   myHeaders.append("Content-Type", "application/json");
+
+  //   let raw = JSON.stringify({
+  //     amount:value,
+  //     name:name,
+  //     phonenum:phonenum,
+  //     email:email,
+  //     teamname:teamname,
+  //     dono_with_team:dono_with_team
+  //   });
+
+  //   let requestOptions = {
+  //     method: 'POST',
+  //     headers: myHeaders,
+  //     body: raw,
+  //     redirect: 'follow'
+  //   };
+  //   fetch("https://api.scarecrowrow.org/generate-payment-link", requestOptions)
+  //     .then(response => response.text())
+  //     .then(result => document.location.href = (result))
+  //     .catch(error => console.log('error', error));
+  // }
+</script>
+</html>
