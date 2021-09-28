@@ -84,7 +84,7 @@
     }
   })
 
-  document.querySelector('#scarecrow-select').value = window.location.href.split('?')[1]
+  document.querySelector('#scarecrow-select').value = window.location.href.split('?')[1] || ""
 
   // function submitDonation (value = document.querySelector('.donation-amount').querySelector('input').value) {
   //   const name = document.querySelector('#name').value
