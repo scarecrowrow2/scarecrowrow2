@@ -44,7 +44,7 @@
           <option value='Evanston Rec. Center- (have)'>
           <option value='Q102’s Joe BurrCROW'>
           <option value='"Brick and Horror"'>
-          <option value='Paddlefest '>
+          <option value='Paddlefest'>
           <option value='Madi and Jon'>
           <option value='Ghouls on the Run'>
           <option value='McNicholas Hope Squad'>
@@ -83,7 +83,7 @@
     }
   })
 
-  document.querySelector('#scarecrow-select').value = decodeURI(window.location.href).split('?')[1] || ""
+  document.querySelector('#scarecrow-select').value = decodeURI(window.location.href).split('?')[1].split('&quot;').join('"') || ""
 
   // function submitDonation (value = document.querySelector('.donation-amount').querySelector('input').value) {
   //   const name = document.querySelector('#name').value
